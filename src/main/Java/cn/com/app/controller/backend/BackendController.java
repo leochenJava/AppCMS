@@ -68,7 +68,7 @@ public class BackendController {
     public String appcheck(String aid,String vid,HttpServletRequest request){
         AppInfo extAppInfo = appInfoService.getExtAppInfoById(Long.parseLong(aid));
         request.setAttribute("ExtAppInfo",extAppInfo);
-        System.out.println();
+        System.out.println("*****************");
         AppVersion appVersion = appInfoService.getAppVersionById(Long.parseLong(vid));
         request.setAttribute("ExtAppVersion",appVersion);
         return "backend/appcheck";
