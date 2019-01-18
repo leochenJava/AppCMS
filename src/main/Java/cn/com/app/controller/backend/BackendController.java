@@ -71,7 +71,7 @@ public class BackendController {
         System.out.println("*****************");
         System.out.println("*****************");
         System.out.println("*****************");System.out.println("*****************");
-
+        System.out.println("*****************");System.out.println("*****************");
         AppVersion appVersion = appInfoService.getAppVersionById(Long.parseLong(vid));
         request.setAttribute("ExtAppVersion",appVersion);
         return "backend/appcheck";
